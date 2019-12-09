@@ -6,3 +6,4 @@ For this task it is assumed that only one thread will access the cache, so there
 Please provide an example of usage of the cache as a unit test(s).
 
 Solution: Strategy pattern (GoF) + LinkedHashMaps or HashMaps for O(1) for put(K,V) and get(K) operations
+Technologies: Java, Maven, JUnit 4.11
