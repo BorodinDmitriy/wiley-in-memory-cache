@@ -1,0 +1,15 @@
+
+#Idea
+.idea
+*.iml
+
+#Gedit
+*~
+
+#Maven
+target
+lib
+
+#vscode
+.DS_Store
+.mvn
