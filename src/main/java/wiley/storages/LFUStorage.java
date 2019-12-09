@@ -25,8 +25,8 @@ public class LFUStorage<K,V> implements Storage<K,V> {
     }
 
     private void increaseFrequency(K key) {
-        int currentFrequency = keyFrequencies.get(key);
-        int newFrequency = currentFrequency + 1;
+        Integer currentFrequency = keyFrequencies.get(key);
+        Integer newFrequency = currentFrequency + 1;
         keyFrequencies.put(key,newFrequency);
         lists.get(currentFrequency).remove(key);
 
