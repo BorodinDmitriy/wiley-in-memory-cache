@@ -6,7 +6,7 @@ import wiley.storages.LRUStorage;
 // Strategy Context Class
 public class Cache<K,V> {
     public enum EvictionStrategy {LRU, LFU};
-    public static String MAX_SIZE_ERROR = "maxSize should be more than 0";
+    public static String MAX_SIZE_ERROR = "MAX_SIZE should be more than 0";
     public static String EVICTION_STRATEGY_ERROR = "Eviction strategy was not found";
 
     private Storage<K,V> storage;
