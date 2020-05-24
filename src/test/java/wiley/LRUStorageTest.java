@@ -1,22 +1,18 @@
 package wiley;
 
-import org.junit.Before;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 import wiley.cache.Storage;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.assertEquals;
-
-
-import static wiley.cache.Cache.EvictionStrategy.LRU;
-
-import org.junit.Test;
 import wiley.storages.LRUStorage;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class LRUStorageTest {
     private int maxSize;
     private Storage<Integer, Integer> storage;
 
-    @Before
+    @BeforeAll
     public void initializeTestsForLRU() {
         maxSize = 3;
         storage = new LRUStorage<>(maxSize);

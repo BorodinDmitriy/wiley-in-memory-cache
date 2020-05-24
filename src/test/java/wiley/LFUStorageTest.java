@@ -1,17 +1,17 @@
 package wiley;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 import wiley.cache.Storage;
 import wiley.storages.LFUStorage;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LFUStorageTest {
     private int maxSize;
     private Storage<Integer, Integer> storage;
 
-    @Before
+    @BeforeAll
     public void initializeTestsForLFU() {
         maxSize = 3;
         storage = new LFUStorage<>(maxSize);
